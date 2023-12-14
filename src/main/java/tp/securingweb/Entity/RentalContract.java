@@ -11,10 +11,10 @@ public class RentalContract {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @ManyToOne
-    @JoinColumn(name = "address_id", nullable = false)
+    @JoinColumn(name = "property", nullable = false)
     private Property property;
     @ManyToOne
-    @JoinColumn(name = "address_id", nullable = false)
+    @JoinColumn(name = "owner", nullable = false)
     private Owner owner;
     @Column(name = "tenant")
     private String tenant;
